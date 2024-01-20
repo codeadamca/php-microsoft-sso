@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft SSO</title>
+</head>
+<body>
+
+<h1>Microsoft SSO</h1>
+
 <?php
 
 include('config.php');
@@ -10,6 +21,7 @@ use myPHPnotes\Microsoft\Auth;
 use myPHPnotes\Microsoft\Handlers\Session;
 use myPHPnotes\Microsoft\Models\User;
 
+/*
 echo '<pre>';
 print_r($_SESSION);
 echo '</pre>';
@@ -17,6 +29,7 @@ echo '</pre>';
 echo '<pre>';
 print_r($_GET);
 echo '</pre>';
+*/
 
 $auth = new Auth(
     Session::get("tenant_id"), 
@@ -39,3 +52,8 @@ $user = new User;
 
 echo "Name: "  . $user->data->getDisplayName() . "<br>";
 echo "Email: " . $user->data->getUserPrincipalName() . "";
+
+?>
+
+</body>
+</html>
