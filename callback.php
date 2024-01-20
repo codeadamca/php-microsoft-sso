@@ -57,7 +57,7 @@ echo "Email: " . $user->data->getUserPrincipalName() . "";
 
 <hr>
 
-<a href="index.html">Login with a Different Account</a>
+<a href="logout.php">Login with a Different Account</a> 
 
 </body>
 </html>

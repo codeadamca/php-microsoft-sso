@@ -11,7 +11,7 @@ use myPHPnotes\Microsoft\Auth;
 $tenant = "common";
 $client_id = CLIENT_ID;
 $client_secret = CLIENT_SECRET;
-$callback = "http://localhost:8888/callback.php";
+$callback = "https://faker.ca/php-microsoft-sso/callback.php";
 $scopes = ["User.Read"];
 
 $microsoft = new Auth(
